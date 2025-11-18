@@ -1,0 +1,55 @@
+/* Estilos base (pantallas pequeñas) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.colorBox {
+    width: 90vw;        /* 1 por línea en pantallas pequeñas */
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.colorBox img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Media Query 1 - mínimo 772px */
+@media (min-width: 772px) {
+    .colorBox {
+        width: 45vw;     /* 45% width */
+        margin: 10px;
+    }
+
+    .colorBox img {
+        max-height: 30vh;   /* requerido por la tarea */
+    }
+}
+
+/* Media Query 2 - mínimo 998px */
+@media (min-width: 998px) {
+    .colorBox {
+        width: 30vw;        /* 30% width */
+        margin: 15px auto;
+
+    }
+}
